@@ -44,10 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateNavbar(e) {
     const isMobile = e.matches;
 
-    if (isMobile === false) {
+    if (isMobile === false || isMobile === true) {
+      // For desktop
       mobileMenu.setAttribute('inert', '');
-    } else {
-      mobileMenu.removeAttribute('inert');
     }
   }
 
@@ -56,12 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeButton = document.querySelector('.close-btn');
   const overlay = document.getElementById('overlay');
 
-  function openSideBar() {
-    const menu = document.querySelector('.mobile-menu');
-    menu.classList.add('active');
+  console.log(mobileMenu);
 
+  function openSideBar() {
     // Accessibility
     mobileMenu.removeAttribute('inert');
+
+    const menu = document.querySelector('.mobile-menu');
+    menu.classList.add('active');
   }
 
   function closeSideBar() {
@@ -69,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.remove('active');
 
     // Accessibility
-
     mobileMenu.setAttribute('inert', '');
   }
 
