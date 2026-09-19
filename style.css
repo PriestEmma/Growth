@@ -181,6 +181,7 @@ img {
 .faq ul.faq-menu li {
   padding: 10px 20px;
   font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .faq ul.faq-menu li.active {
@@ -532,7 +533,12 @@ body:has(.mobile-menu.active) #overlay {
   /* FAQ */
 
   .faq ul.faq-menu {
-    width: 70%;
+    width: 90%;
+  }
+
+  .faq ul.faq-menu li {
+    padding: 5px 10px;
+    font-size: 1rem;
   }
 
   /* Footer  */
@@ -574,5 +580,10 @@ body:has(.mobile-menu.active) #overlay {
 
   .text-xl {
     font-size: 1.75rem;
+  }
+
+  .faq ul.faq-menu li {
+    padding: 3px 5px;
+    font-size: 0.8rem;
   }
 }
