@@ -195,10 +195,6 @@ img {
   position: relative;
 }
 
-.faq .faq-group .faq-group-header h4 {
-  cursor: pointer;
-}
-
 .faq .faq-group .faq-group-header i {
   position: absolute;
   top: 25px;
@@ -219,6 +215,7 @@ img {
 .faq .faq-group .faq-group-header h4 {
   font-weight: 600;
   width: 95%;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -541,6 +538,10 @@ body:has(.mobile-menu.active) #overlay {
     font-size: 1rem;
   }
 
+  .faq .faq-group .faq-group-header h4 {
+    width: 88%;
+  }
+
   /* Footer  */
 
   .footer .container {
@@ -585,5 +586,9 @@ body:has(.mobile-menu.active) #overlay {
   .faq ul.faq-menu li {
     padding: 3px 5px;
     font-size: 0.8rem;
+  }
+
+  .faq .faq-group .faq-group-header h4 {
+    width: 86%;
   }
 }
