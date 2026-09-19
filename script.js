@@ -55,8 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeButton = document.querySelector('.close-btn');
   const overlay = document.getElementById('overlay');
 
-  console.log(mobileMenu);
-
   function openSideBar() {
     // Accessibility
     mobileMenu.removeAttribute('inert');
