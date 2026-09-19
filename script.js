@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu');
 
   mediaQuery.addEventListener('change', updateNavbar);
+  updateNavbar(mediaQuery);
 
   function updateNavbar(e) {
     const isMobile = e.matches;
